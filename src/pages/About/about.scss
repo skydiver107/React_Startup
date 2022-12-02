@@ -1,0 +1,179 @@
+.about-container{
+  display: flex;
+  justify-content: center;
+  padding: 0px 15px;
+
+  .about-wrapper{
+    max-width: 1147px;
+    width: 100%;
+    margin-top: 101px;
+
+    .rect-angle1{
+      padding: 43px;
+      background: #222222;
+      opacity: 0.85;
+      border: 1px solid #FFC000;
+      color: #FFC000;
+      border-radius: 5px;
+      
+      .text-block{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        .text-wrapper{
+          max-width: 853px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-right: 150px;
+          gap: 20px;
+
+          .span700{
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+          }
+
+          .lettersping{
+            letter-spacing: 0.035em;
+            line-height: 154.4%;
+          }
+        }
+
+        .nft1-img{
+          position: absolute;
+          right: -76px;
+        }
+
+        .text-bar1{
+          max-width: 383px;
+          width: 100%;
+        }
+
+        .text-bar2{
+          max-width: 406px;
+          width: 100%;
+        }
+      }
+    }
+
+    .slider-block{
+      width: 100%;
+      margin-top: 53px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .react-multi-carousel-item{
+        max-width: 300px !important;
+        min-width: 300px !important;
+      }
+
+      .react-multiple-carousel__arrow--right,
+      .react-multiple-carousel__arrow--left{
+        display: none !important;
+      }
+
+      .react-multi-carousel-dot-list{
+        bottom: auto !important;
+        margin-top: 21px !important;
+      }
+
+      .react-multi-carousel-dot button{
+        background: #919191;
+      }
+
+      .react-multi-carousel-dot--active button{
+        background-color: #FFC000 !important;
+      }
+
+      .slider-body{
+        width: 100%;
+        margin: 30px 0px 80px 0px;
+
+        .card-body{
+          position: relative;
+          min-width: 284px;
+          height: 611px;
+          margin: 0px 12px;
+          background: #222222;
+          border: 1px solid #FFC000;
+          border-radius: 5px;
+          color: white;
+
+          .card-text{
+            padding: 6px 20px 40px 10px;
+            text-align: left;
+
+            .nft-name{
+              color: #FFC000;
+              text-decoration: none;
+            }
+
+            .sub-name{
+              margin: 5px 0px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mt61{
+    margin-top: 61px;
+  }
+
+  @media (max-width: 1024px) {
+    background: #222222;
+    .mt61{
+      margin: auto;
+    }
+    .about-wrapper{
+      .rect-angle1{
+        padding: 0px;
+        border: 0px;
+        text-align: center;
+        color: white;
+        .text-block{
+          background: #333333;
+          padding: 15px 28px;
+          margin-top: 26px;
+          border-radius: 5px;
+          text-align: left;
+          .text-wrapper{
+            flex-direction: column;
+          }
+          .nft1-img{
+            width: 450px;
+          }
+
+          .text{
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .about-wrapper{
+      .rect-angle1{
+        .text-block{
+          .text-wrapper{
+            flex-direction: column;
+            margin: 0px;
+
+            .text-bar1, .text-bar2{
+              max-width: unset;
+            }
+          }
+          .nft1-img{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
